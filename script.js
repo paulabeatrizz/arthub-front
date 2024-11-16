@@ -14,7 +14,7 @@ loginBtn.addEventListener('click', () => {
 
 
 function cadastrar(event) {
-    event.preventDefault(); // Previne o comportamento padrão do botão
+    event.preventDefault();
     
     console.log("Chamando o fetch para cadastrar...");
     
@@ -22,12 +22,6 @@ function cadastrar(event) {
     const Iemail = document.querySelector('.form-box.register input[name="email"]');
     const Idata = document.querySelector('.form-box.register input[name="dataNascimento"]');
     const Isenha = document.querySelector('.form-box.register input[name="senha"]');
-
-    console.log("Campos do formulário:");
-    console.log("Nome:", Inome?.value || "Não encontrado");
-    console.log("Email:", Iemail?.value || "Não encontrado");
-    console.log("Data de Nascimento:", Idata?.value || "Não encontrado");
-    console.log("Senha:", Isenha?.value || "Não encontrado");
 
     fetch("http://localhost:8080/api/v1/auth/registrar", {
         headers: {
@@ -57,7 +51,7 @@ function cadastrar(event) {
         console.error("Erro ao cadastrar:", err);
     });
 
-    // Limpa os campos do formulário
+    // Limpar os campos
     Inome.value = "";
     Iemail.value = "";
     Idata.value = "";
