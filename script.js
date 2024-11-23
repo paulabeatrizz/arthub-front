@@ -22,6 +22,7 @@ function cadastrar(event) {
     console.log("Chamando o fetch para cadastrar...");
     
     const Inome = document.querySelector('.form-box.register input[name="nome"]');
+    const Iapelido = document.querySelector('.form-box.register input[name="apelido"]');
     const Iemail = document.querySelector('.form-box.register input[name="email"]');
     const Idata = document.querySelector('.form-box.register input[name="dataNascimento"]');
     const Isenha = document.querySelector('.form-box.register input[name="senha"]');
@@ -34,6 +35,7 @@ function cadastrar(event) {
         method: "POST",
         body: JSON.stringify({
             nome: Inome.value,
+            apelido: Iapelido.value,
             email: Iemail.value,
             dataNascimento: Idata.value,
             senha: Isenha.value,
@@ -56,6 +58,7 @@ function cadastrar(event) {
 
     // Limpar os campos
     Inome.value = "";
+    Iapelido.value = "";
     Iemail.value = "";
     Idata.value = "";
     Isenha.value = "";
