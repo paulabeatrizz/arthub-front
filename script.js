@@ -92,6 +92,8 @@ function login(event){
 
     Iemail.value = "";
     Isenha.value = "";
+
+    window.location.href = '/home.html';
     
 }
 
