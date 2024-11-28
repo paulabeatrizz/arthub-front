@@ -1,8 +1,11 @@
-//Constantes usadas na mudança de registro para login
+//Constantes usadas no front
 const container = document.querySelector(".container")
 const registerBtn = document.querySelector(".register-btn")
 const loginBtn = document.querySelector(".login-btn")
+
+//Constante dos botões
 const criarcontaBtn = document.querySelector(".criarconta")
+const fazerLoginBtn = document.querySelector(".fazerlogin")
 
 registerBtn.addEventListener('click', () => {
     container.classList.add('active');
@@ -61,4 +64,38 @@ function cadastrar(event) {
     Isenha.value = "";
 }
 
+function login(event){
+    event.preventDefault();
+
+    console.log("Chamando o fetch para executar login...");
+    
+    const Iemail = document.querySelector('.form-box.login input[name="email"]');
+    const Isenha = document.querySelector('.form-box.login input[name="senha"]');
+
+    fetch("http://localhost:8080/api/v1/auth/login", {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        method: "POST",
+        body: JSON.stringify({
+            email: Iemail.value,
+            senha: Isenha.value,
+        }),
+    })
+    .then(data => {
+        console.log("Login bem-sucedido:", data);
+    })
+    .catch(error => {
+        console.error("Erro durante o login:", error);
+    });
+
+    Iemail.value = "";
+    Isenha.value = "";
+
+    window.location.href = '/home.html';
+    
+}
+
 criarcontaBtn.addEventListener("click", cadastrar);
+fazerLoginBtn.addEventListener("click", login)
