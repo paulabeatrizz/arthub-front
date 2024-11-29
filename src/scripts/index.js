@@ -15,7 +15,6 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
 })
 
-
 function cadastrar(event) {
     event.preventDefault();
     
@@ -85,6 +84,7 @@ function login(event){
     })
     .then(data => {
         console.log("Login bem-sucedido:", data);
+        window.location.href = '../pages/home.html';
     })
     .catch(error => {
         console.error("Erro durante o login:", error);
@@ -92,9 +92,26 @@ function login(event){
 
     Iemail.value = "";
     Isenha.value = "";
-
-    window.location.href = '/home.html';
     
+}
+
+function mudarCor(botao, tipo) {
+    const botoes = document.querySelectorAll('.tag');
+
+    botoes.forEach((btn) => {
+        btn.classList.remove('ativo');
+        const checkIcon = btn.querySelector('i');
+        if (checkIcon) {
+          checkIcon.style.display = 'none';
+        }
+      });
+    
+    botao.classList.add('ativo');
+
+    const checkIcon = botao.querySelector('i');
+    if (checkIcon) {
+      checkIcon.style.display = 'inline'; 
+  }
 }
 
 criarcontaBtn.addEventListener("click", cadastrar);
