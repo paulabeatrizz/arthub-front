@@ -18,6 +18,11 @@ a:hover{
     object-fit: contain;
 }
 
+.logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8; 
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -39,16 +44,6 @@ main {
     height: 92vh;
 }
 
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-
 .mobile-menu{
     display: none;
     cursor: pointer;
@@ -59,4 +54,25 @@ main {
     height: 2px;
     background: #fff;
     margin: 8px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 15px; 
+}
+
+.perfil img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.perfil img:hover {
+    transform: scale(1.1);
+    opacity: 0.8; 
 }
