@@ -82,17 +82,23 @@ function login(event){
             senha: Isenha.value,
         }),
     })
-    .then(data => {
-        console.log("Login bem-sucedido:", data);
+    .then(response => {
+        if (!response.ok) {
+  
+            throw new Error(`Erro no login: ${response.status} - ${response.statusText}`);
+        }
+        return response.text();
+    })
+    .then(token => {
+        console.log("Login bem-sucedido:", token);
+        localStorage.setItem('authToken', token);
+
         window.location.href = '../pages/home.html';
     })
     .catch(error => {
         console.error("Erro durante o login:", error);
+        alert("Erro durante o login. Verifique suas credenciais ou tente novamente mais tarde.");
     });
-
-    Iemail.value = "";
-    Isenha.value = "";
-    
 }
 
 function mudarCor(botao, tipo) {
