@@ -64,6 +64,14 @@ main {
     padding-right: 15px; 
 }
 
+.seguindo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 15px; 
+}
+
 .perfil img {
     width: 40px; 
     height: 40px; 
@@ -89,4 +97,12 @@ main .banner img {
     height: 100%;
     object-fit: cover;
     object-position: center; 
+}
+
+.left {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 10px; 
 }
