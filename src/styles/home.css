@@ -30,6 +30,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     height: 100%; 
+    margin-top: 10px;
 }
 
 nav {
@@ -38,6 +39,7 @@ nav {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #e7e8ef;
     height: 8vh;
+    margin-bottom: 20px;
 }
 
 main {
@@ -130,11 +132,6 @@ main .banner img {
 section{
     display: flex;
     justify-content: center;
-}
-
-.divesquerda{
-    display: flex;
-    align-items: center;
 }
 
 .left {
