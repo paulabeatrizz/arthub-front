@@ -24,6 +24,62 @@ body{
     overflow: hidden;
 }
 
+.containerpassword{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position:absolute;
+    width: 850px;
+    height: 550px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    margin: 20px;
+    padding: 40px;
+}
+
+.form.password{
+    width: 100%; 
+    max-width: 400px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form.password a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.email {
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background: #eee;
+    border-radius: 8px;;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.senha  {
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    background: #eee;
+    border-radius: 8px;;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
 .form-box{
     position: absolute;
     right: 0;

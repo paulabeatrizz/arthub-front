@@ -55,7 +55,6 @@ function cadastrar(event) {
         console.error("Erro ao cadastrar:", err);
     });
 
-    // Limpar os campos
     Inome.value = "";
     Iapelido.value = "";
     Iemail.value = "";
