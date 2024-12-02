@@ -126,3 +126,22 @@ main .banner img {
     font-size: 30px;
     color: black;
 }
+
+.biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    max-width: 600px;
+    min-height: 150px;
+    padding: 15px; 
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.biografia .texto {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    text-align: center; 
+}
