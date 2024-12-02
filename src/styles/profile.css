@@ -106,3 +106,20 @@ main .banner img {
     width: 100%; 
     padding: 10px; 
 }
+
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.foto img {
+    width: 150px; 
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-top: -50px;
+    transform: translateY(-10px);
+}
