@@ -55,7 +55,6 @@ function cadastrar(event) {
         console.error("Erro ao cadastrar:", err);
     });
 
-    // Limpar os campos
     Inome.value = "";
     Iapelido.value = "";
     Iemail.value = "";
@@ -84,28 +83,44 @@ function login(event){
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error(`Erro na requisição: ${response.status} - ${response.statusText}`);
+  
+            throw new Error(`Erro no login: ${response.status} - ${response.statusText}`);
         }
         return response.text();
     })
-    .then(data => {
-        const token = data; 
-        if (token) {
-            localStorage.setItem("token", token);
-            console.log("Token recebido:", token);
-        } else {
-            console.error("A resposta não contém o token esperado:", data);
-        }
+    .then(token => {
+        console.log("Login bem-sucedido:", token);
+        localStorage.setItem('authToken', token);
+
+        window.location.href = '../pages/home.html';
     })
     .catch(error => {
         console.error("Erro durante o login:", error);
+        alert("Erro durante o login. Verifique suas credenciais ou tente novamente mais tarde.");
     });
 
     Iemail.value = "";
     Isenha.value = "";
-
-    // window.location.href = '/home.html';
     
+}
+
+function mudarCor(botao, tipo) {
+    const botoes = document.querySelectorAll('.tag');
+
+    botoes.forEach((btn) => {
+        btn.classList.remove('ativo');
+        const checkIcon = btn.querySelector('i');
+        if (checkIcon) {
+          checkIcon.style.display = 'none';
+        }
+      });
+    
+    botao.classList.add('ativo');
+
+    const checkIcon = botao.querySelector('i');
+    if (checkIcon) {
+      checkIcon.style.display = 'inline'; 
+  }
 }
 
 criarcontaBtn.addEventListener("click", cadastrar);
