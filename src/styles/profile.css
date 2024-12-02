@@ -95,6 +95,10 @@ main .banner img {
     padding: 10px; 
 }
 
+.foto {
+    position: relative;
+}
+
 .foto-perfil {
     display: flex;
     justify-content: center;
@@ -164,4 +168,31 @@ main .banner img {
     font-size: 16px;
     font-weight: bold;
     color: black;
+}
+
+i.fas.fa-pencil-alt {
+    color: #785a28;
+    cursor: pointer;
+}
+
+#profileInput {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px; 
+    background-color: #e7e8ef;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #d6eaff; 
 }
