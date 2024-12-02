@@ -33,6 +33,7 @@ body {
     display: flex;
     flex: 1;
     height: auto;
+    margin: 10px;
 }
 
 .imagem-post img {
@@ -109,3 +110,47 @@ body {
     display: block; 
 }
 
+.conteudo-post {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 16px;
+    overflow: auto;
+}
+
+#header-post{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.texto-comum{
+    font-size: 14px;
+    color: #49454F;
+}
+
+.tag {
+    font: 900;
+}
+
+.about-image{
+    font-size: 16px;
+}
+
+.btn-comentar {
+    display: flex;
+    justify-content: flex-start;
+    all: unset;
+    border: 1px solid #b4b2b6;
+    border-radius: 8px;
+    width: 80px;
+    padding: 6px;
+    background-color: #FFFFFF;
+    cursor: pointer; 
+}
