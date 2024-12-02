@@ -15,7 +15,6 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove('active');
 })
 
-
 function cadastrar(event) {
     event.preventDefault();
     

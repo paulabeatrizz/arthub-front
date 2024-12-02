@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/styles/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>ArtHub - Ínicio</title>
 </head>
 <body>
     <header>
-        <div>
-            <button class="home"></button>
-            <button class="perfil">seguindo</button>
-        </div>
+        <nav>
+            <div class="left">
+                <a class="logo" href="/src/pages/home.html">
+                    <img src="/src/assets/logo_arthub.png" alt="ArtHub">
+                </a>
+                <a class="seguindo">
+                    seguindo
+                </a>
+            </div>
+            <div class="right">
+                <a class="perfil" href="/src/pages/profile.html">
+                    <img src="/src/assets/chill_guy.jpg" alt="Ícone do Perfil">
+                </a>
+            </div>
+        </nav>
     </header>
+    <section>
+        <div>
+            <button class="tag todos" onclick="filtrarConteudo('todos')">Todos</button>
+            <button class="tag poema" onclick="filtrarConteudo('poema')">Poema</button>
+            <button class="tag musica" onclick="filtrarConteudo('musica')">Música</button>
+            <button class="tag pintura" onclick="filtrarConteudo('pintura')">Pintura</button>
+            <button class="tag desenho" onclick="filtrarConteudo('desenho')">Desenho</button>
+            <button class="tag escultura" onclick="filtrarConteudo('escultura')">Escultura</button>
+            <button class="tag fotografia" onclick="filtrarConteudo('fotografia')">Fotografia</button>
+        </div>
+    </section>
 </body>
 </html>
