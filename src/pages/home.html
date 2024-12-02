@@ -2,29 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="/src/styles/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../scripts/index.js" defer ></script>
     <title>ArtHub - Ínicio</title>
 </head>
 <body>
     <header>
-        <div class="divesquerda">
-            <button class="btn-casa">
-                <i class='bx bx-home-alt'></i>
-            </button>
-            <button class="btn-seguindo">seguindo</button>
-        </div>
-        <div class="divdireita">
-            <button class="btn-perfil">
-                <i class='bx bxs-user-circle' ></i>
-            </button>
-        </div>
+        <nav>
+            <div class="left">
+                <a class="logo" href="/src/pages/home.html">
+                    <img src="/src/assets/logo_arthub.png" alt="ArtHub">
+                </a>
+                <a class="seguindo">
+                    seguindo
+                </a>
+            </div>
+            <div class="right">
+                <a class="perfil" href="/src/pages/profile.html">
+                    <img src="/src/assets/chill_guy.jpg" alt="Ícone do Perfil">
+                </a>
+            </div>
+        </nav>
     </header>
     <section>
         <div>
-            <button class="tag todos" onclick="mudarCor(this, 'todos')"><i class='bx bx-check' style="display:none;"></i>Todos</button>
+            <button class="tag todos" onclick="mudarCor(this)"><i class='bx bx-check' style="display:none;"></i>Todos</button>
             <button class="tag poema" onclick="mudarCor(this, 'poema')"><i class='bx bx-check' style="display:none;"></i>Poema</button>
             <button class="tag musica" onclick="mudarCor(this, 'musica')"><i class='bx bx-check' style="display:none;"></i>Música</button>
             <button class="tag pintura" onclick="mudarCor(this, 'pintura')"><i class='bx bx-check' style="display:none;"></i>Pintura</button>
