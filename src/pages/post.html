@@ -13,32 +13,32 @@
             <img src="https://placecats.com/neo/300/200" alt="imagem do post">
         </div>
         <div class="informacoes-post">
-            <div class="dados-dono">
-                <div class="imagem-dono"></div>
-                <h1 class="arrobaDono">@dono</h1>
+            <div class="cabecalho">
+                <div class="dados-dono">
+                    <img src="../assets/foto-perfil.jpg" alt="foto-perfil">
+                    <h1 id="arroba-dono" class="arroba-dono">@dono</h1>
+                </div>
+                <div class="botoes">
+                    <button type="button" class="btn" name="btn-curtir">
+                        <img src="../assets/heart-regular.svg" alt="">
+                    </button>
+                    <button type="button" class="btn" name="btn-compartilhar">
+                        <img src="../assets/share-solid.svg" alt="">
+                    </button>
+                </div>
             </div>
-            <button type="button" class="btn-curtir btn" name="btn-curtir">curtir</button>
-            <button type="button" class="btn-compartilhar btn" name="btn-compartilhar">compartilhar</button>
-            <div class="conteudo-post">
+            <div class="conteudo-post" id="conteudo-post">
                 <h2 class="titulo">titulo</h2>
                 <p class="tags">@</p>
                 <p class="texto-post">texto sobre o post</p>
             </div>
-            <div class="container-comentarios">
-                <div class="foto-comentario">
-                    <div class="conteudo-comentario">
-                        <input type="text" class="text-comentario">
-                        <div class="data-publicacao">
-                            <time datetime="2024-11-28">28 de novembro de 2024</time>
-                        </div>
-                    </div>
-                </div>
+            <div id="container-comentarios">
             </div>
             <button class="btn-comentar">Comentar</button>
         </div>
     </div>
 
     
-    <script src="../scripts/post.js"></script>
+    <script src="../scripts/post.js" defer></script>
 </body>
 </html>

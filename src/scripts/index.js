@@ -83,8 +83,20 @@ function login(event){
             senha: Isenha.value,
         }),
     })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Erro na requisição: ${response.status} - ${response.statusText}`);
+        }
+        return response.text();
+    })
     .then(data => {
-        console.log("Login bem-sucedido:", data);
+        const token = data; 
+        if (token) {
+            localStorage.setItem("token", token);
+            console.log("Token recebido:", token);
+        } else {
+            console.error("A resposta não contém o token esperado:", data);
+        }
     })
     .catch(error => {
         console.error("Erro durante o login:", error);
@@ -93,7 +105,7 @@ function login(event){
     Iemail.value = "";
     Isenha.value = "";
 
-    window.location.href = '/home.html';
+    // window.location.href = '/home.html';
     
 }
 
