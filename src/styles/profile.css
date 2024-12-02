@@ -1,9 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 a{
     color: #334949;
@@ -63,19 +61,15 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding-right: 15px;
-    margin-left: 15px;
+    padding-right: 15px; 
 }
 
 .seguindo {
-    border-style: none;
-    background: #8a8a8a; 
-    border-color: #D9D9D9;
-    border-radius: 50px;
-    padding: 8px; 
-    cursor: pointer;
-    font-size: 16px;
-    margin: -33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 15px; 
 }
 
 .perfil img {
@@ -105,42 +99,10 @@ main .banner img {
     object-position: center; 
 }
 
-
-.tag{
-    background: none;
-    border-style:solid;
-    border-color: #D9D9D9;
-    border-radius: 7px;
-    padding: 5px; 
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.tag:hover{
-    background-color: #D9D9D9;
-}
-
-.tag.ativo{
-    background: #afa085;
-    border-style: none;
-    border-color: #afa085;
-}
-
-section{
-    display: flex;
-    justify-content: center;
-}
-
-.divesquerda{
-    display: flex;
-    align-items: center;
-}
-
 .left {
     display: flex; 
     align-items: center; 
-    justify-content: normal; 
+    justify-content: space-between; 
     width: 100%; 
     padding: 10px; 
 }
