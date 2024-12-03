@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a{
@@ -16,6 +17,7 @@ a:hover{
 .logo img{
     height: 180px;
     object-fit: contain;
+    margin-top: 10px;
 }
 
 .logo img:hover {
