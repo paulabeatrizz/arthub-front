@@ -35,13 +35,12 @@ a:hover{
 nav {
     display: flex;
     justify-content: space-around;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #e7e8ef;
     height: 8vh;
 }
 
 main {
-    background-color: #333;
+    background-color: #ffffff;
     background-size: cover;
     height: 92vh;
 }
@@ -217,4 +216,10 @@ i.fas.fa-pencil-alt {
 
 .custom-file-upload-banner:hover {
     background-color: #d6eaff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
