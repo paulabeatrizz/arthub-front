@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="/src/styles/profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,29 +24,29 @@
     </header>
     <main>
         <div class="banner">
-            <div class="banner-contudo">
+            <div class="banner-conteudo">
                 <img src="/src/assets/header_exemplo.jpg" alt="foto do banner">
+                <label for="bannerInput" class="custom-file-upload-banner"><i class="fas fa-pencil-alt"></i></label>
+                <input type="file" id="bannerInput" accept="image/*" onchange="updateBanner()">
             </div>
         </div>
         <div class="foto-perfil">
             <div class="foto">
-                <img src="/src/assets/header_exemplo.jpg" alt="foto de perfil">
+                <img src="/src/assets/header_exemplo.jpg" alt="foto de perfil" id="profileImg">
+                <input type="file" id="profileInput" accept="image/*" onchange="updateProfile()">
+                <label for="profileInput" class="custom-file-upload"><i class="fas fa-pencil-alt"></i></label>
             </div>
         </div>
         <div class="nomes">
-            <div class="apelido">
-                Loid Forger
-            </div>
-            <div class="nome-usuario">
-                @otaldoloidforger
-            </div>
+            <div id="nome">...</div>
+            <div id="apelido">...</div>
         </div>
         <div class="biografia">
-            <div class="texto">
-                Psiquiatria por amor;<br>
-                Pai da Anya Forger;<br>
-                Casado e comprometido com Yor Forger;<br>
-                🩺💍
+            <div class="texto">*cri, cri, cri* <br>
+                Você ainda não possui uma biografia!
+            </div>
+            <div>
+                <button class=""></button>
             </div>
             <div class="follow">
                 <div class="seguindo">
@@ -58,6 +59,10 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h2 id="titulo">Minhas publicações</h2>
+        </div>
     </main>
+    <script src="/src/scripts/profile.js"></script>
 </body>
 </html>

@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="/src/styles/home.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../scripts/index.js" defer ></script>
+
     <title>ArtHub - Ínicio</title>
 </head>
 <body>
@@ -27,14 +29,58 @@
     </header>
     <section>
         <div>
-            <button class="tag todos" onclick="filtrarConteudo('todos')">Todos</button>
-            <button class="tag poema" onclick="filtrarConteudo('poema')">Poema</button>
-            <button class="tag musica" onclick="filtrarConteudo('musica')">Música</button>
-            <button class="tag pintura" onclick="filtrarConteudo('pintura')">Pintura</button>
-            <button class="tag desenho" onclick="filtrarConteudo('desenho')">Desenho</button>
-            <button class="tag escultura" onclick="filtrarConteudo('escultura')">Escultura</button>
-            <button class="tag fotografia" onclick="filtrarConteudo('fotografia')">Fotografia</button>
+            <button class="tag todos" onclick="mudarCor(this, 'todos')"><i class='bx bx-check' style="display:none;"></i>Todos</button>
+            <button class="tag poema" onclick="mudarCor(this, 'poema')"><i class='bx bx-check' style="display:none;"></i>Poema</button>
+            <button class="tag musica" onclick="mudarCor(this, 'musica')"><i class='bx bx-check' style="display:none;"></i>Música</button>
+            <button class="tag pintura" onclick="mudarCor(this, 'pintura')"><i class='bx bx-check' style="display:none;"></i>Pintura</button>
+            <button class="tag desenho" onclick="mudarCor(this, 'desenho')"><i class='bx bx-check' style="display:none;"></i>Desenho</button>
+            <button class="tag escultura" onclick="mudarCor(this, 'escultura')"><i class='bx bx-check' style="display:none;"></i>Escultura</button>
+            <button class="tag fotografia" onclick="mudarCor(this, 'fotografia')"><i class='bx bx-check' style="display:none;"></i>Fotografia</button>
         </div>
     </section>
+    <div class="gallery">
+        <div class="post">
+          <img src="/src/assets/image1.jpg" alt="Imagem 1" />
+          <div class="info">
+            <h3>Título do Post</h3>
+            <p>@donoDoPost</p>
+          </div>
+        </div>
+        <div class="post">
+          <img src="/src/assets/image2.jpg" alt="Imagem 2" />
+          <div class="info">
+            <h3>Título do Post</h3>
+            <p>@donoDoPost</p>
+          </div>
+        </div>
+        <div class="post">
+            <img src="/src/assets/image3.jpg" alt="Imagem 3" />
+            <div class="info">
+              <h3>Título do Post</h3>
+              <p>@donoDoPost</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="/src/assets/image4.jpg" alt="Imagem 2" />
+            <div class="info">
+              <h3>Título do Post</h3>
+              <p>@donoDoPost</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="/src/assets/image5.jpg" alt="Imagem 2" />
+            <div class="info">
+              <h3>Título do Post</h3>
+              <p>@donoDoPost</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="/src/assets/image6.jpg" alt="Imagem 2" />
+            <div class="info">
+              <h3>Título do Post</h3>
+              <p>@donoDoPost</p>
+            </div>
+          </div>
+      </div>
 </body>
 </html>
