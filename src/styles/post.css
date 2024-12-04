@@ -17,7 +17,6 @@ body {
 
 .container {
     display: flex;
-    align-items: center;
     justify-content: center;
     align-content: center;
     max-width: 90%;
@@ -44,18 +43,16 @@ body {
 
 .informacoes-post {
     display: flex;
+    align-content: space-evenly;
     flex: 1;
     flex-direction: column;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
     padding: 15px;
     gap: 10px;
 }
 
 .cabecalho {
     display: flex;
-    flex: 1;
     align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
@@ -153,4 +150,13 @@ body {
     padding: 6px;
     background-color: #FFFFFF;
     cursor: pointer; 
+}
+
+.btn-comentar:hover {
+    background-color: #f7f6f6;
+}
+
+#container-comentarios {
+    display: flex;
+    background-color: #FFFFFF;
 }
