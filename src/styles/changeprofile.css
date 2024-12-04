@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color: #334949;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo img{
+    height: 180px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e7e8ef;
+    height: 8vh;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 15px; 
+}
+
+.perfil img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.perfil img:hover {
+    transform: scale(1.1);
+    opacity: 0.8; 
+}
+
+.left {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 10px; 
+}
+
+.formulario{
+    background-color: #ffffff;
+    width: 100%;
+    justify-items: center;
+}
+
+.formulario h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 70px;
+  }
+
+  .input-box {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .input-box h3 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .input-box input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .editarbtn {
+    margin-top: 1rem;
+    background-color: #785a28;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }

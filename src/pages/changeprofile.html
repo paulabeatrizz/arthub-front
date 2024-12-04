@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/changeprofile.css">
+    <script src="../scripts/changeprofile.js" defer ></script>
+    <title>Editar perfil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a class="logo" href="/src/pages/home.html">
+                    <img src="/src/assets/logo_arthub.png" alt="Logo do ArtHub">
+                </a>
+            </div>
+            <div class="right">
+                <a class="perfil" href="/src/pages/profile.html">
+                    <img src="/src/assets/chill_guy.jpg" alt="Ícone do Perfil">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="formulario"> 
+        <h1>Editar perfil</h1>
+        <div class="input-box">
+            <h3>Novo apelido:</h3>
+            <input type="text" name="novoApelido" id="apelido">
+        </div>
+        <div class="input-box">
+            <h3>Novo Email:</h3>
+            <input type="text" name="novoEmail" id="email">
+        </div>
+        <div class="input-box">
+            <h3>Biografia:</h3>
+            <input type="text" maxlength="255" name="biografia" id="biografia">
+        </div>
+        <button type="submit" onclick="editar(event)" class="editarbtn">Editar</button>
+    </div>
+</body>
+</html>
