@@ -102,15 +102,13 @@ function login(event){
 
 function atualizarSenha(event){
     event.preventDefault();
-    // Captura os campos de entrada
+
     const Iemail = document.querySelector('.emailpass');
     const Isenha = document.querySelector('.senhapass');
 
-    // Exibe no console para verificar os valores capturados
     console.log("E-mail:", Iemail.value);
     console.log("Senha:", Isenha.value);
 
-    // Envia a requisição ao back-end
     fetch("http://localhost:8080/api/v1/usuarios/atualizar", {
         headers: {
             'Accept': 'application/json',
@@ -126,7 +124,7 @@ function atualizarSenha(event){
     .then((res) => {
         console.log("Resposta recebida:", res);
         if (res.ok) {
-            return res.json(); // Transforma a resposta em JSON
+            return res.json();
         } else {
             throw new Error("Erro na requisição: " + res.status);
         }

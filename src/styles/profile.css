@@ -122,13 +122,13 @@ main .banner img {
     text-align: center;
 }
 
-.nome .apelido {
+#apelido {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.nomes .nome-usuario {
+#nome {
     font-size: 30px;
     color: black;
 }
