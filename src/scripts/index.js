@@ -131,7 +131,7 @@ function atualizarSenha(event){
     })
     .then((data) => {
         console.log("Senha atualizada com sucesso:", data);
-        alert("Senha redefinida com sucesso!");
+        alert("Senha redefinida com sucesso! Volte para fazer login!");
     })
     .catch((err) => {
         console.error("Erro ao redefinir senha:", err);

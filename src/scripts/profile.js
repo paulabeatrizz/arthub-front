@@ -33,7 +33,7 @@ function updateBanner() {
 function mostrarDados(event){
     event.preventDefault();
 
-    const token = localStorage.getItem("authToken"); // Pega o token do localStorage
+    const token = localStorage.getItem("authToken");
 
     if (!token) {
         alert("Usuário não está logado.");
@@ -43,7 +43,7 @@ function mostrarDados(event){
     fetch("http://localhost:8080/api/v1/usuarios/dados", {
         method: "GET",
         headers: {
-            "Authorization": "Bearer " + token, // Envia o token no cabeçalho
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json"
         }
     })
@@ -51,10 +51,9 @@ function mostrarDados(event){
             if (!response.ok) {
                 throw new Error("Erro ao buscar informações do usuário.");
             }
-            return response.json(); // Converte a resposta para JSON
+            return response.json();
         })
         .then(user => {
-            // Atualiza os elementos do HTML com os dados do usuário
             document.getElementById("nome").textContent = user.nome;
             document.getElementById("apelido").textContent = "@" + user.apelido;
             document.getElementById("texto").textContent = user.biografia;

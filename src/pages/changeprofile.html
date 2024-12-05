@@ -22,21 +22,17 @@
             </div>
         </nav>
     </header>
-    <div class="formulario"> 
-        <h1>Editar perfil</h1>
-        <div class="input-box">
-            <h3>Novo apelido:</h3>
-            <input type="text" name="novoApelido" id="apelido">
-        </div>
-        <div class="input-box">
-            <h3>Novo Email:</h3>
-            <input type="text" name="novoEmail" id="email">
-        </div>
-        <div class="input-box">
+    <div class="container">
+        <form class="form editarPerfil" onsubmit="editarPerfil(event)">
+            <h1>Redefinir Senha</h1>
+            <h3>Email já cadastrado:</h3>
+            <input type="text" class="email">
+            <h3>Seu novo apelido:</h3>
+            <input type="text" class="novoApelido">
             <h3>Biografia:</h3>
-            <input type="text" maxlength="255" name="biografia" id="biografia">
-        </div>
-        <button type="submit" onclick="editar(event)" class="editarbtn">Editar</button>
+            <input type="text" maxlength="255" class="biografia">
+            <button type="submit" class="editarbtn">Editar</button>
+        </form>
     </div>
 </body>
 </html>

@@ -68,32 +68,55 @@ nav {
     padding: 10px; 
 }
 
-.formulario{
+.form {
     background-color: #ffffff;
     width: 100%;
     justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
 }
 
-.formulario h1 {
+.form h1 {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     color: #333;
     margin-top: 70px;
   }
 
-  .input-box {
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-
-  .input-box h3 {
+  .form h3 {
     font-size: 1rem;
     color: #666;
     margin-bottom: 0.5rem;
   }
 
-  .input-box input {
-    width: 100%;
+  .email {
+    width: 700px;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .novoApelido {
+    width: 700px;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .biografia {
+    width: 700px;
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -104,7 +127,6 @@ nav {
   }
 
   .editarbtn {
-    margin-top: 1rem;
     background-color: #785a28;
     color: #fff;
     padding: 0.8rem 1.5rem;

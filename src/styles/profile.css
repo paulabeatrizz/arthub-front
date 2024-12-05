@@ -260,3 +260,16 @@ i.fas.fa-pencil-alt {
     font-size: 0.875rem;
     color: #666;
 }
+
+.changeBtn {
+    margin-top: 1rem;
+    height: 50px;
+    width: 100px;
+    background-color: #785a28;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
