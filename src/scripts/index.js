@@ -98,6 +98,10 @@ function login(event){
         console.error("Erro durante o login:", error);
         alert("Erro durante o login. Verifique suas credenciais ou tente novamente mais tarde.");
     });
+
+    Iemail.value = "";
+    Isenha.value = "";
+    
 }
 
 function atualizarSenha(event){

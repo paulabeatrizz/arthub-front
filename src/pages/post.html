@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/post.css">
+    <link rel="stylesheet" href="fontAwesome/css/font-awesome.css">
+    <title>ArtHub</title>
+</head>
+<body>
+    <div class="container">
+        <div class="imagem-post">
+            <img src="../assets/800px-Michelangelo's_Pieta_5450_cropncleaned_edit.jpg" alt="imagem do post">
+        </div>
+        <div class="informacoes-post">
+            <div class="cabecalho">
+                <div class="dados-dono">
+                    <img src="../assets/foto-perfil.jpg" alt="foto-perfil">
+                    <h1 id="arroba-dono" class="arroba-dono">@dono</h1>
+                </div>
+                <div class="botoes">
+                    <button type="button" class="btn" name="btn-curtir">
+                        <img src="../assets/heart-regular.svg" alt="">
+                    </button>
+                    <button type="button" class="btn" name="btn-compartilhar">
+                        <img src="../assets/share-solid.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="conteudo-post" id="conteudo-post">
+                <div id="header-post">
+                    <h2 class="titulo">titulo</h2>
+                    <p class="tag texto-comum">@natureza</p>
+                </div>
+                <p class="about-image texto-comum">um texto muito foda sobre a imagem</p>
+            </div>
+            <div id="container-comentarios"></div>
+            <button class="btn-comentar">comentar</button>
+        </div>
+    </div>
+
+    
+    <script src="../scripts/post.js" defer></script>
+</body>
+</html>
