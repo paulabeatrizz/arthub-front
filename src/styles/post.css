@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 90%;
+    min-width: 60%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+}
+
+.imagem-post {
+    display: flex;
+    flex: 1;
+    height: auto;
+    margin: 10px;
+}
+
+.imagem-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.informacoes-post {
+    display: flex;
+    align-content: space-evenly;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.dados-dono img {
+    justify-content: flex-start;
+    height: 45px; 
+    width: 45px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+.dados-dono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    width: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 5px;
+    border-radius: 18px;
+}
+
+.arroba-dono {
+    font-size: 18px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    all: unset; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer; 
+}
+
+.btn img {
+    width: 27px; 
+    height: auto; 
+    display: block; 
+}
+
+.conteudo-post {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 16px;
+    overflow: auto;
+}
+
+#header-post{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.texto-comum{
+    font-size: 14px;
+    color: #49454F;
+}
+
+.tag {
+    font: 900;
+}
+
+.about-image{
+    font-size: 16px;
+}
+
+.btn-comentar {
+    display: flex;
+    justify-content: flex-start;
+    all: unset;
+    border: 1px solid #b4b2b6;
+    border-radius: 8px;
+    width: 80px;
+    padding: 6px;
+    background-color: #FFFFFF;
+    cursor: pointer; 
+}
+
+.btn-comentar:hover {
+    background-color: #f7f6f6;
+}
+
+#container-comentarios {
+    display: flex;
+    background-color: #FFFFFF;
+}

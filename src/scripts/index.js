@@ -98,6 +98,10 @@ function login(event){
         console.error("Erro durante o login:", error);
         alert("Erro durante o login. Verifique suas credenciais ou tente novamente mais tarde.");
     });
+
+    Iemail.value = "";
+    Isenha.value = "";
+    
 }
 
 function atualizarSenha(event){
@@ -131,33 +135,13 @@ function atualizarSenha(event){
     })
     .then((data) => {
         console.log("Senha atualizada com sucesso:", data);
-        alert("Senha redefinida com sucesso!");
+        alert("Senha redefinida com sucesso! Volte para fazer login!");
     })
     .catch((err) => {
         console.error("Erro ao redefinir senha:", err);
         alert("Erro ao redefinir senha. Verifique as informações e tente novamente.");
     });
 }
-
-function mudarCor(botao, tipo) {
-    const botoes = document.querySelectorAll('.tag');
-
-    botoes.forEach((btn) => {
-        btn.classList.remove('ativo');
-        const checkIcon = btn.querySelector('i');
-        if (checkIcon) {
-          checkIcon.style.display = 'none';
-        }
-      });
-    
-    botao.classList.add('ativo');
-
-    const checkIcon = botao.querySelector('i');
-    if (checkIcon) {
-      checkIcon.style.display = 'inline'; 
-  }
-}
-
 
 criarcontaBtn.addEventListener("click", cadastrar);
 fazerLoginBtn.addEventListener("click", login)
